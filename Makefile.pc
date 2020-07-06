@@ -12,7 +12,7 @@ COMPILER_FLAGS = -w
 LINKER_FLAGS = -lsfml-system -lsfml-graphics -lsfml-window
 
 #OBJ_NAME specifies the name of the executable
-OBJ_NAME = sfml_pong.sh
+OBJ_NAME = sfml_pong.bin
 
 #This is the targe that compiles our executable
 all	:	$(OBJS)
