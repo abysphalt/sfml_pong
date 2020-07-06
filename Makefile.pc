@@ -1,0 +1,19 @@
+#OBJS specifies which files to compile as part of the project
+OBJS = main.cpp
+
+##CC specifies which compiler we will be using
+CC= g++
+
+#COMPILER_FLAGS specifies the additional compilation option we will be using
+#-w suppresses all warning
+COMPILER_FLAGS = -w
+
+#LINKER_FLAGS specifies the libraries  we are linking against
+LINKER_FLAGS = -lsfml-system -lsfml-graphics -lsfml-window
+
+#OBJ_NAME specifies the name of the executable
+OBJ_NAME = sfml_pong.sh
+
+#This is the targe that compiles our executable
+all	:	$(OBJS)
+		$(CC) $(OBJS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)
